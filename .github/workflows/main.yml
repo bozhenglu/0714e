@@ -1,0 +1,14 @@
+name: Ru python
+on:
+  push:
+  schedule:
+  - cron: "1 * * * *"
+jobs:
+  build:       #job的name
+    name: env1
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run my python
+      run:
+        python test.py
