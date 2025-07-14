@@ -2,7 +2,7 @@ name: Ru python
 on:
   push:
   schedule:
-  - cron: "* * * * *"
+  - cron: "* 1 * * *"
 jobs:
   build:       
     name: env1
